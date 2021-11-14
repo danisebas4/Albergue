@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: normal 22px ;
+    color: white;
+    background-color: gray;
+}
+nav{
+    list-style: none; /**/
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+a:hover{   /* cambio de estado*/
+    color: black;
+}
+/*header*/
+header{
+    top:0;
+    left:0;
+    width: 100%; /*Ocuopa el ancho al 100%*/
+    position: absolute; /*Posición específico para que no se mueva*/
+    display: flex; /*Determina si un elemento es grid en bloque o flexible*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px;
+    z-index: 10;
+}
+header h2{
+    font-family: 'Quicksand', sans-serif;
+
+}
+header nav{
+    display: flex;
+}
+header nav li{
+    margin: 0px 15px;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header nav li{
+        margin: 0px 5px;
+        font-size: 18px;
+    }
+    header{
+        margin-bottom: 15px;
+    }
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+/*@media*/
+.fondo{
+    position: relative;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+.fondo .background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 3000px 1300px;
+    background-color:lightskyblue;
+    z-index: -1;
+}
+.fondo .background-image:after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.45;
+}
+.fondo h1{
+    font: bold 60px 'Open Sans', Sans-serif;
+    margin: 20px;
+}
+.fondo h3{
+    font: normal 28px 'Open Sans', Sans-serif;
+    margin-bottom: 40px;
+    color: white;
+}
+a.boton{
+    color: white;
+    border-radius: 4px;
+    background-color: yellowgreen;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 105px;
+}
+footer{
+    text-align: center;
+}

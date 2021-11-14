@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: normal 22px ;
+    color: black;
+    background-color: white;
+}
+nav{
+    list-style: none; /**/
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+a:hover{   /* cambio de estado*/
+    color:white;
+}
+@media (max-width: 1000px){
+    header{
+        flex-direction: column;
+    }
+    header nav li{
+        margin: 0px 5px;
+        font-size: 18px;
+    }
+    header{
+        margin-bottom: 15px;
+    }
+}
+/*header*/
+header{
+    top:0;
+    left:0;
+    width: 100%; /*Ocuopa el ancho al 100%*/
+    position: absolute; /*Posición específico para que no se mueva*/
+    display: flex; /*Determina si un elemento es grid en bloque o flexible*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px;
+    background-color: orange;
+    z-index: 10;
+}
+header h2{
+    font-family: 'Quicksand', sans-serif;
+
+}
+header nav{
+    display: flex;
+}
+header nav li{
+    margin: 0px 15px;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+.cont{
+    border: black;
+    padding-top: 20px;
+    border-style: inherit;
+    text-align: left;
+}
+section{
+    font-family: 'Quicksand', sans-serif;
+}
+article{
+    padding: 50px 100px;
+    border-style: solid;
+    border-radius: 30px;
+    width: 2000px;
+    position:relative;
+}
+body{
+    margin: 200px 300px 20px;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 25px;
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 10px;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+.boton{
+    color: white;
+    border-radius: 4px;
+    background-color: green;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 105px;
+    border-radius: 10px;
+    
+}
+input[type="text"], input[type="email"],input[type="password"], select{
+    width: 400px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+input[type="radio"]{
+    width: 50px;
+    height: 20px;
+}
+textarea{
+    width: 400px;
+    height: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.container{
+    text-align: center;
+}
+.filas{
+    padding: 10px 10px 10px 50px;
+}
+footer{
+    text-align: center;
+}
