@@ -1,8 +1,9 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     font: normal 22px ;
     color: black;
@@ -18,18 +19,7 @@ a{
 a:hover{   /* cambio de estado*/
     color:white;
 }
-@media (max-width: 1000px){
-    header{
-        flex-direction: column;
-    }
-    header nav li{
-        margin: 0px 5px;
-        font-size: 18px;
-    }
-    header{
-        margin-bottom: 15px;
-    }
-}
+
 /*header*/
 header{
     top:0;
@@ -47,12 +37,13 @@ header h2{
     font-family: 'Quicksand', sans-serif;
 
 }
+
 header nav{
     display: flex;
 }
 header nav li{
     margin: 0px 15px;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Quicksand', sans-serif;
 }
 .cont{
@@ -60,19 +51,25 @@ header nav li{
     padding-top: 20px;
     border-style: inherit;
     text-align: left;
+    
 }
 section{
     font-family: 'Quicksand', sans-serif;
+    
 }
 article{
     padding: 50px 100px;
     border-style: solid;
     border-radius: 30px;
-    width: 2000px;
     position:relative;
+    width: auto;
+    height: auto;
+    margin-bottom: 50px;
 }
 body{
-    margin: 200px 300px 20px;
+    margin-top: 250px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 h1{
     font-size: 50px;
@@ -88,6 +85,9 @@ label{
     display: inline-block;
     width: 300px;
     vertical-align: top;
+}
+.form{
+    text-align: center;
 }
 .boton{
     color: white;
@@ -126,4 +126,71 @@ textarea{
 }
 footer{
     text-align: center;
+}
+/**/
+.menu{
+    position: absolute;
+    right: 50px;
+}
+.menu a{
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 30px;
+    transition: color 1s;
+    text-transform: uppercase;
+    margin: 0px 15px;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+.menu a:hover{
+    color:black;
+}
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #E85860;
+}
+.btn span {
+    display:block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background:white;
+}
+
+@media only screen and (max-width: 1300px){
+    .col-25, .col-75, input[type=submit], input[type=reset]  {
+        width: 100%;
+        margin-top: 0;
+      }
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background:white;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        color:black;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        border-style: solid;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
 }
